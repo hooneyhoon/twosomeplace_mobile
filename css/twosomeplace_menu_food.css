@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd,input{margin:0;padding:0}
+body{font-family:'Noto Sans KR',"나눔 고딕", "맑은 고딕", "굴림", sans-serif, serif;font-size:14px;line-height:1.5}
+ul,li{list-style:none}
+a{text-decoration:none;color:#000}
+address{font-style:normal}
+    
+/* skipMenu */
+.skipMenu{position:relative}
+.skipMenu a{position:absolute;top:-40px;left:0;width:138px;border:1px solid #4ec53d;background:#333;text-align:center}
+.skipMenu a:active,.skipMenu a:focus{top:0;z-index:1000;text-decoration:none}
+.skipMenu span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
+    
+/*layout*/
+/*header*/
+header{width:100%;height:150px;background:#231f20;border:1px solid #231f20;box-sizing:border-box;position:fixed;z-index:100}
+        
+.header_wrap{width:1146px;height:89px;margin:31px auto 30px;position:relative}
+.header_wrap h1{width:196px;height:66px;background:url(../img/hd_mainlogo.png) no-repeat;text-indent:-9999px;position:absolute;left:0;top:7px}
+.header_wrap h1 a{width:196px;height:66px;display:block}
+        
+.gnb{width:845px;position:absolute;left:347px;top:74px;color:#fff;z-index:121}
+.gnb a{color:#fff}
+.gnb h2{position:absolute;left:-9999px;top:-9999px}
+
+.gnb1{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb1:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:30px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb1:hover:before{visibility:visible;transform:scaleX(1)}
+
+.gnb2{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb2:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:33px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb2:hover:before{visibility:visible;transform:scaleX(1)}
+
+.gnb3{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb3:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:35px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb3:hover:before{visibility:visible;transform:scaleX(1)}
+
+.gnb4{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb4:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:34px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb4:hover:before{visibility:visible;transform:scaleX(1)}
+
+.gnb5{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb5:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:33px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb5:hover:before{visibility:visible;transform:scaleX(1)}
+
+.gnb6{width:135px;height:25px;float:left;text-align:center;background:#231f20;position:relative;line-height:1}
+.gnb6:before{content:"";position:absolute;width:50%;height:1px;bottom:0;left:35px;background-color:#fff;visibility:hidden;transform:scaleX(0);transition:all 0.3s ease-in-out}
+.gnb6:hover:before{visibility:visible;transform:scaleX(1)}
+
+
+.line{float:left;margin-top:76px; width:1px;height:170px;background:url(../img/lnb_line.png);display:none}
+
+.nav_bg{background:#231f20;position:absolute;left:0;top:149px;width:100%;height:240px;z-index:120;opacity:1;display:none}
+
+.lnb1,.lnb2,.lnb3,.lnb4,.lnb5,.lnb6{display:none}
+
+.lnb1{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb1>li{padding:8px 10px;line-height:1}
+.lnb2{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb2>li{padding:8px 10px;line-height:1}
+.lnb3{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb3>li{padding:8px 10px;line-height:1}
+.lnb4{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb4>li{padding:8px 10px;line-height:1}
+.lnb5{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb5>li{padding:8px 10px;line-height:1}
+.lnb6{overflow:hidden;text-align:center;padding-top:60px;font-size:13px}
+.lnb6>li{padding:8px 10px;line-height:1}
+
+.lnb1 a{color:#acacac}
+.lnb2 a{color:#acacac}
+.lnb3 a{color:#acacac}
+.lnb4 a{color:#acacac}
+.lnb5 a{color:#acacac}
+.lnb6 a{color:#acacac}
+
+.lnb1_1 a:hover{color:#fff}
+.lnb1_2 a:hover{color:#fff}
+.lnb1_3 a:hover{color:#fff}
+.lnb1_4 a:hover{color:#fff}
+.lnb1_5 a:hover{color:#fff}
+
+.lnb2_1 a:hover{color:#fff}
+.lnb2_2 a:hover{color:#fff}
+.lnb2_3 a:hover{color:#fff}
+
+.lnb3_1 a:hover{color:#fff}
+.lnb3_2 a:hover{color:#fff}
+.lnb3_3 a:hover{color:#fff}
+.lnb3_4 a:hover{color:#fff}
+.lnb3_5 a:hover{color:#fff}
+.lnb3_6 a:hover{color:#fff}
+
+.lnb4_1 a:hover{color:#fff}
+.lnb4_2 a:hover{color:#fff}
+.lnb4_3 a:hover{color:#fff}
+
+.lnb5_1 a:hover{color:#fff}
+.lnb5_2 a:hover{color:#fff}
+.lnb5_3 a:hover{color:#fff}
+.lnb5_4 a:hover{color:#fff}
+.lnb5_5 a:hover{color:#fff}
+
+.lnb6_1 a:hover{color:#fff}
+.lnb6_2 a:hover{color:#fff}
+.lnb6_3 a:hover{color:#fff}
+.lnb6_4 a:hover{color:#fff}
+        
+.top_menu{width:380px;position:absolute;top:0;right:0}
+.top_menu a{color:#fff;font-size:13px}
+.top_menu h2{position:absolute;left:-9999px;top:-9999px}
+.top_menu0 {
+  float: left;
+}
+.top_menu0:after {
+  content: "|";
+  margin: 0 12px;
+  color: white;
+}
+.top_menu1{float:left}
+.top_menu1:after{content:"|";margin:0 12px;color:white}
+.top_menu2{float:left}
+.top_menu2:after{content:"|";margin:0 12px;color:white}
+.top_menu3{float:left}
+.top_menu3:after{content:"|";margin:0 12px;color:white}
+.top_menu4{float:left}
+.top_menu4:after{content:"|";margin:0 12px;color:white}
+.top_menu5{float:left;background:url(../img/tm_insta.png) no-repeat;width:29px;height:24px;text-indent:-9999px;margin-right:6px}
+.top_menu5 a{width:29px;height:24px;display:block}
+.top_menu6{float:left;background:url(../img/tm_facebook.png) no-repeat;width:29px;height:24px;text-indent:-9999px}
+.top_menu6 a{width:29px;height:24px;display:block}
+    
+.quick_menu{width:120px;height:360px;background:url(../img/quick_bg.png) no-repeat; position:fixed;left:50px;top:195px;z-index:100}
+.quick_menu h2{position:absolute;left:-9999px;top:-9999px}
+.quick_menu1{width:70px;height:80px;background:url(../img/quick_store.png) no-repeat;margin:102px 25px 0;text-indent:-9999px}
+.quick_menu1:hover{width:70px;height:80px;background:url(../img/quick_store_hover.png) no-repeat}
+.quick_menu2{width:70px;height:93px;background:url(../img/quick_seminar.png) no-repeat;position:absolute;text-indent:-9999px;margin:57px 25px}
+.quick_menu2:hover{width:70px;height:93px;background:url(../img/quick_seminar_hover.png) no-repeat}
+.quick_menu1 a,.quick_menu2 a{width:50px;height:67px;display:block}
+.quick_close{
+    width: 17px;
+    height: 17px;
+    background: url(../img/quick_close_10.png) no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top:-20px;
+    right: 0px;
+}
+
+/*content*/
+
+main{border-top: 1px solid #231f20;}
+
+/*lnb*/
+.background{width:100%;height:300px;background:url(../img/menu_bg.png) no-repeat center;margin:149px auto 70px;position:relative}
+.menu_lnb{width:675px;height:43px;background:url(../img/menu_lnb_bg_04.png) no-repeat;position:relative;top:214px;margin:auto}
+.menu_lnb>ul>li{float:left;font-size:18px;color:#231f20}
+
+.lnb_line{width:1px;height:26px;background:url(../img/menu_lnb_line_15.png) no-repeat;margin:7px 15px 6px 15px}
+
+.coffee{width:91px;height:30px;margin:7px 0px 6px 20px;background:url(../img/menu_lnb_coffee_04.png) no-repeat left;letter-spacing:-1}
+.coffee>a{padding-left:40px}
+.coffee:hover{background:url(../img/menu_lnb_coffee_hover_04.png) no-repeat}
+
+.beverage{width:116px;height:30px;margin:7px 0px 6px 0px;background:url(../img/menu_lnb_beverage_06.png) no-repeat left;letter-spacing:-1}
+.beverage>a{padding-left:40px}
+.beverage:hover{background:url(../img/menu_lnb_beverage_hover_06.png) no-repeat}
+
+.food{width:78px;height:30px;margin:7px 0px 6px 0px;background:url(../img/menu_lnb_food_08.png) no-repeat left;letter-spacing:-1}
+.food>a{padding-left:40px}
+.food:hover{background:url(../img/menu_lnb_food_hover_08.png) no-repeat}
+
+.MD{width:97px;height:30px;margin:7px 0px 6px 0px;background:url(../img/menu_lnb_md_10.png) no-repeat left;letter-spacing:-1}
+.MD>a{padding-left:40px}
+.MD:hover{background:url(../img/menu_lnb_md_hover_10.png) no-repeat}
+
+.wholecake{width:129px;height:30px;margin:7px 0px 6px 0px;background:url(../img/menu_lnb_wholecake_12.png) no-repeat left;letter-spacing:-1}
+.wholecake>a{padding-left:40px}
+.wholecake:hover{background:url(../img/menu_lnb_wholecake_hover_12.png) no-repeat}
+
+/*checkbox*/
+.check_form{width:882px;margin:0 auto 80px}
+.check_food{font-size:30px;font-weight:bold;color:#231f20;margin-right:15px}
+.check_form>legend{font-size:14px;color:#231f20}
+.box{border:0}
+.bd_box{width:910px;height:50px;margin:auto;border:1px solid #231f20;box-sizing:border-box}
+.bd_box>input{width:14px;height:14px;margin:17px 10px 17px 30px}
+.bd_box>label{padding:15px 0}
+
+/*common*/
+.title_b{font-size:20px;margin-right:14px}
+.nutri{text-align:center;line-height:2;letter-spacing:-1}
+.info_close{width:10px;height:10px;background:url(../img/menu_info_close_36.png) no-repeat;cursor:pointer;position:relative;left:210px}
+
+
+.new_sticker{width:45px;height:45px;background:url(../img/new_sticker.png) no-repeat;position:relative;left:10px;top:-310px}
+.best_sticker{width:45px;height:45px;background:url(../img/best_sticker.png) no-repeat;position:relative;left:10px;top:-310px}
+.best_sticker2{width:45px;height:45px;background:url(../img/best_sticker.png) no-repeat;position:relative;left:10px;top:-305px}
+.menu_img{width:264px;height:320px;overflow:hidden;cursor:pointer}
+.b_menu_title{width:264px;height:25px;float:left;margin:10px 30px 46px 0;text-align:center}
+.b_menu_title1{width:264px;height:25px;float:left;margin:10px 0 46px 0;text-align:center}
+
+/*cake*/
+.f_cake{width:1146px;overflow:hidden;margin:0 auto 66px}
+.cake_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.cake_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.cake_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_4{position:relative;width:264px;height:320px;float:left}
+.cake_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_8{position:relative;width:264px;height:320px;float:left}
+.cake_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_12{position:relative;width:264px;height:320px;float:left}
+.cake_13{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_14{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_15{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_16{position:relative;width:264px;height:320px;float:left}
+.cake_17{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_18{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_19{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_20{position:relative;width:264px;height:320px;float:left}
+.cake_21{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_22{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_23{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_24{position:relative;width:264px;height:320px;float:left}
+.cake_25{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_26{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_27{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_28{position:relative;width:264px;height:320px;float:left}
+.cake_29{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_30{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_31{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.cake_32{position:relative;width:264px;height:320px;float:left}
+
+.cake{font-size:16px;font-weight:bold}
+.cake_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.cake_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.cake_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.cake_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.cake_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-410px;display:none}
+.cake_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake1_img{width:264px;height:320px;background:url(../img/Berry-Blossom-Mousse_03.png) no-repeat top;transition:transform 0.5s}
+.cake1_img:hover{transform:scale(1.1,1.1)}
+
+.cake_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake2_img{width:264px;height:320px;background:url(../img/Strawberry-Tart_05.png) no-repeat top;transition:transform 0.5s}
+.cake2_img:hover{transform:scale(1.1,1.1)}
+
+.cake_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake3_img{width:264px;height:320px;background:url(../img/Hazelnut-Mascarpone-Cheese_07.png) no-repeat top;transition:transform 0.5s}
+.cake3_img:hover{transform:scale(1.1,1.1)}
+
+.cake_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake4_img{width:264px;height:320px;background:url(../img/Hazelnuts-Fresh-Cream-Crepe_09.png) no-repeat top;transition:transform 0.5s}
+.cake4_img:hover{transform:scale(1.1,1.1)}
+
+.cake_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake5_img{width:264px;height:320px;background:url(../img/More-than-Cookie-N-Cream_15.png) no-repeat top;transition:transform 0.5s}
+.cake5_img:hover{transform:scale(1.1,1.1)}
+
+.cake_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake6_img{width:264px;height:320px;background:url(../img/Queens-Carrot_17.png) no-repeat top;transition:transform 0.5s}
+.cake6_img:hover{transform:scale(1.1,1.1)}
+
+.cake_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_7_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake7_img{width:264px;height:320px;background:url(../img/Be-My-Strawberry_17.png) no-repeat top;transition:transform 0.5s}
+.cake7_img:hover{transform:scale(1.1,1.1)}
+
+.cake_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_8_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake8_img{width:264px;height:320px;background:url(../img/Black-Velvet_18.png) no-repeat top;transition:transform 0.5s}
+.cake8_img:hover{transform:scale(1.1,1.1)}
+
+.cake_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_9_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake9_img{width:264px;height:320px;background:url(../img/Strawberry-Fresh-Cream-Cake_23.png) no-repeat top;transition:transform 0.5s}
+.cake9_img:hover{transform:scale(1.1,1.1)}
+
+.cake_10_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_10_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake10_img{width:264px;height:320px;background:url(../img/Cappuccino-Cake_24.png) no-repeat top;transition:transform 0.5s}
+.cake10_img:hover{transform:scale(1.1,1.1)}
+
+.cake_11_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_11_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake11_img{width:264px;height:320px;background:url(../img/Chocolate-Creme-Choux_25.png) no-repeat top;transition:transform 0.5s}
+.cake11_img:hover{transform:scale(1.1,1.1)}
+
+.cake_12_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_12_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake12_img{width:264px;height:320px;background:url(../img/Vanilla-Creme-Choux_26.png) no-repeat top;transition:transform 0.5s}
+.cake12_img:hover{transform:scale(1.1,1.1)}
+
+.cake_13_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_13_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake13_img{width:264px;height:320px;background:url(../img/Fresh-Cream-Pecan-Tart_31.png) no-repeat top;transition:transform 0.5s}
+.cake13_img:hover{transform:scale(1.1,1.1)}
+
+.cake_14_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_14_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake14_img{width:264px;height:320px;background:url(../img/Fresh-Cream-Chiffon_32.png) no-repeat top;transition:transform 0.5s}
+.cake14_img:hover{transform:scale(1.1,1.1)}
+
+.cake_15_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_15_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake15_img{width:264px;height:320px;background:url(../img/Vanilla-Creme-Brulee_33.png) no-repeat top;transition:transform 0.5s}
+.cake15_img:hover{transform:scale(1.1,1.1)}
+
+.cake_16_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_16_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake16_img{width:264px;height:320px;background:url(../img/TWG-Royal-Milktea-Chiffon_34.png) no-repeat top;transition:transform 0.5s}
+.cake16_img:hover{transform:scale(1.1,1.1)}
+
+.cake_17_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_17_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake17_img{width:264px;height:320px;background:url(../img/Dutch-Salted-Caramel_39.png) no-repeat top;transition:transform 0.5s}
+.cake17_img:hover{transform:scale(1.1,1.1)}
+
+.cake_18_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_18_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake18_img{width:264px;height:320px;background:url(../img/Camembert-Cheese-Cake_41.png) no-repeat top;transition:transform 0.5s}
+.cake18_img:hover{transform:scale(1.1,1.1)}
+
+.cake_19_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_19_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box;letter-spacing:-1}
+.cake19_img{width:264px;height:320px;background:url(../img/Strawberry-Chocolate-Fresh-Cream-Cake_42.png) no-repeat top;transition:transform 0.5s}
+.cake19_img:hover{transform:scale(1.1,1.1)}
+
+.cake_20_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_20_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake20_img{width:264px;height:320px;background:url(../img/Tiramisu_43.png) no-repeat top;transition:transform 0.5s}
+.cake20_img:hover{transform:scale(1.1,1.1)}
+
+.cake_21_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.cake_21_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake21_img{width:264px;height:320px;background:url(../img/Belgian-Chocolate-Ganache_48.png) no-repeat top;transition:transform 0.5s}
+.cake21_img:hover{transform:scale(1.1,1.1)}
+
+.cake_22_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_22_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake22_img{width:264px;height:320px;background:url(../img/Strawberry-Rare-Cheese_49.png) no-repeat top;transition:transform 0.5s}
+.cake22_img:hover{transform:scale(1.1,1.1)}
+
+.cake_23_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_23_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake23_img{width:264px;height:320px;background:url(../img/Ice-Box-Cake_50.png) no-repeat top;transition:transform 0.5s}
+.cake23_img:hover{transform:scale(1.1,1.1)}
+
+.cake_24_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_24_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake24_img{width:264px;height:320px;background:url(../img/Gruyere-Cheese-Mousse_51.png) no-repeat top;transition:transform 0.5s}
+.cake24_img:hover{transform:scale(1.1,1.1)}
+
+.cake_25_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_25_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake25_img{width:264px;height:320px;background:url(../img/Triple-Chocolate-Mousse-Cake_56.png) no-repeat top;transition:transform 0.5s}
+.cake25_img:hover{transform:scale(1.1,1.1)}
+
+.cake_26_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_26_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake26_img{width:264px;height:320px;background:url(../img/Newyork-Cheese-Cake_57.png) no-repeat top;transition:transform 0.5s}
+.cake26_img:hover{transform:scale(1.1,1.1)}
+
+.cake_27_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_27_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake27_img{width:264px;height:320px;background:url(../img/Rose-Berry-Fresh-Cream-Cake_58.png) no-repeat top;transition:transform 0.5s}
+.cake27_img:hover{transform:scale(1.1,1.1)}
+
+.cake_28_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_28_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake28_img{width:264px;height:320px;background:url(../img/Red-Velvet-Cake_59.png) no-repeat top;transition:transform 0.5s}
+.cake28_img:hover{transform:scale(1.1,1.1)}
+
+.cake_29_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_29_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake29_img{width:264px;height:320px;background:url(../img/Strawberry-Yogur-Fresh-Cream-Cake_64.png) no-repeat top;transition:transform 0.5s}
+.cake29_img:hover{transform:scale(1.1,1.1)}
+
+.cake_30_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.cake_30_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.cake30_img{width:264px;height:320px;background:url(../img/Classic-Gateau-Chocolate_65.png) no-repeat top;transition:transform 0.5s}
+.cake30_img:hover{transform:scale(1.1,1.1)}
+
+/*icecreme*/
+
+.f_icecreme{width:1146px;overflow:hidden;margin:0 auto 66px}
+.icecreme_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.icecreme_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.ice_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ice_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ice_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ice_4{position:relative;width:264px;height:320px;float:left}
+
+.ice{font-size:16px;font-weight:bold}
+.ice_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.ice_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.ice_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.ice_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.ice_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.ice_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ice1_img{width:264px;height:320px;background:url(../img/Blueberry-Pablanc_68.png) no-repeat top;transition:transform 0.5s}
+.ice1_img:hover{transform:scale(1.1,1.1)}
+
+.ice_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ice_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ice2_img{width:264px;height:320px;background:url(../img/Chocolat-Cookie-Pablanc_69.png) no-repeat top;transition:transform 0.5s}
+.ice2_img:hover{transform:scale(1.1,1.1)}
+
+.ice_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ice_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ice3_img{width:264px;height:320px;background:url(../img/Soft-Ice-Cream_Cone_70.png) no-repeat top;transition:transform 0.5s}
+.ice3_img:hover{transform:scale(1.1,1.1)}
+
+.ice_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ice_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ice4_img{width:264px;height:320px;background:url(../img/Soft-Ice-Cream_Cup_71.png) no-repeat top;transition:transform 0.5s}
+.ice4_img:hover{transform:scale(1.1,1.1)}
+
+/*macaron*/
+.f_macaron{width:1146px;overflow:hidden;margin:0 auto 66px}
+.macaron_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.macaron_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.maca_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_4{position:relative;width:264px;height:320px;float:left}
+.maca_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_8{position:relative;width:264px;height:320px;float:left}
+.maca_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.maca_12{position:relative;width:264px;height:320px;float:left}
+
+.maca{font-size:16px;font-weight:bold}
+.maca_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.maca_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.maca_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.maca_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.maca_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.maca_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca1_img{width:264px;height:320px;background:url(../img/Macaron-%5BCitron-Lemon%5D_76.png) no-repeat top;transition:transform 0.5s}
+.maca1_img:hover{transform:scale(1.1,1.1)}
+
+.maca_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.maca_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca2_img{width:264px;height:320px;background:url(../img/Macaron-%5BMadagascar-Vanilla%5D_77.png) no-repeat top;transition:transform 0.5s}
+.maca2_img:hover{transform:scale(1.1,1.1)}
+
+.maca_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.maca_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca3_img{width:264px;height:320px;background:url(../img/Macaron-%5BRaspberry%5D_78.png) no-repeat top;transition:transform 0.5s}
+.maca3_img:hover{transform:scale(1.1,1.1)}
+
+.maca_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca4_img{width:264px;height:320px;background:url(../img/Macaron-%5BGreen-Tea%5D_79.png) no-repeat top;transition:transform 0.5s}
+.maca4_img:hover{transform:scale(1.1,1.1)}
+
+.maca_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.maca_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca5_img{width:264px;height:320px;background:url(../img/Macaron-%5BBelgian-Chocolate%5D_84.png) no-repeat top;transition:transform 0.5s}
+.maca5_img:hover{transform:scale(1.1,1.1)}
+
+.maca_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca6_img{width:264px;height:320px;background:url(../img/Macaron-%5BBlueberry%5D_85.png) no-repeat top;transition:transform 0.5s}
+.maca6_img:hover{transform:scale(1.1,1.1)}
+
+.maca_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_7_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca7_img{width:264px;height:320px;background:url(../img/Macaron-Set-%5B6EA%5D_86.png) no-repeat top;transition:transform 0.5s}
+.maca7_img:hover{transform:scale(1.1,1.1)}
+.maca7_info5{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6;letter-spacing:-1}
+
+.maca_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_8_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca8_img{width:264px;height:320px;background:url(../img/Macaron-Set-%5B12EA%5D_87.png) no-repeat top;transition:transform 0.5s}
+.maca8_img:hover{transform:scale(1.1,1.1)}
+.maca8_info5{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6;letter-spacing:-1}
+
+.maca_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_9_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca9_img{width:264px;height:320px;background:url(../img/Belgian-White-Cookie-and-Cream_92.png) no-repeat top;transition:transform 0.5s}
+.maca9_img:hover{transform:scale(1.1,1.1)}
+
+.maca_10_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_10_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca10_img{width:264px;height:320px;background:url(../img/Belgian-Milk-Chocolate_93.png) no-repeat top;transition:transform 0.5s}
+.maca10_img:hover{transform:scale(1.1,1.1)}
+
+.maca_11_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_11_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca11_img{width:264px;height:320px;background:url(../img/Belgian-Dark-Almond-Chocolate_94.png) no-repeat top;transition:transform 0.5s}
+.maca11_img:hover{transform:scale(1.1,1.1)}
+
+.maca_12_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.maca_12_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.maca12_img{width:264px;height:320px;background:url(../img/Belgian-Chocolate-Gift-Set_95.png) no-repeat top;transition:transform 0.5s}
+.maca12_img:hover{transform:scale(1.1,1.1)}
+
+/*sandwich*/
+.f_sandwich{width:1146px;overflow:hidden;margin:0 auto 66px}
+.sandwich_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.sandwich_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.san_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_4{position:relative;width:264px;height:320px;float:left}
+.san_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_8{position:relative;width:264px;height:320px;float:left}
+.san_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_12{position:relative;width:264px;height:320px;float:left}
+.san_13{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_14{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_15{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_16{position:relative;width:264px;height:320px;float:left}
+.san_17{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_18{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_19{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_20{position:relative;width:264px;height:320px;float:left}
+.san_21{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_22{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_23{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.san_24{position:relative;width:264px;height:320px;float:left}
+
+.san{font-size:16px;font-weight:bold}
+.san_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.san_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.san_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.san_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.san_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.san_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san1_img{width:264px;height:320px;background:url(../img/EGG-BACON-BRIOCHE_100.png) no-repeat top;transition:transform 0.5s}
+.san1_img:hover{transform:scale(1.1,1.1)}
+
+.san_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.san_2_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san2_img{width:264px;height:320px;background:url(../img/TOMATO-MUSHROOM-PIZZA-TOAST_101.png) no-repeat top;transition:transform 0.5s}
+.san2_img:hover{transform:scale(1.1,1.1)}
+.san2_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.7}
+
+.san_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san3_img{width:264px;height:320px;background:url(../img/SWEET-EGG-TOAST_102.png) no-repeat top;transition:transform 0.5s}
+.san3_img:hover{transform:scale(1.1,1.1)}
+
+.san_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san4_img{width:264px;height:320px;background:url(../img/CLASSIC-REUBEN_103.png) no-repeat top;transition:transform 0.5s}
+.san4_img:hover{transform:scale(1.1,1.1)}
+
+.san_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san5_img{width:264px;height:320px;background:url(../img/MELTING-CHEESE-_-BEEF_109.png) no-repeat top;transition:transform 0.5s}
+.san5_img:hover{transform:scale(1.1,1.1)}
+
+.san_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san6_img{width:264px;height:320px;background:url(../img/SPICY-TUNA-BAGUETTE_109.png) no-repeat top;transition:transform 0.5s}
+.san6_img:hover{transform:scale(1.1,1.1)}
+
+.san_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_7_info>h3{font-size:13px;line-height:1.5;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box;letter-spacing:-1}
+.san7_img{width:264px;height:320px;background:url(../img/HOT-CHORIZO-AND-MOZZARELLA_110.png) no-repeat top;transition:transform 0.5s}
+.san7_img:hover{transform:scale(1.1,1.1)}
+
+.san_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_8_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box;letter-spacing:-1}
+.san8_img{width:264px;height:320px;background:url(../img/APPLE-AND-CAMEMBERT-CRIOSSANT_111.png) no-repeat top;transition:transform 0.5s}
+.san8_img:hover{transform:scale(1.1,1.1)}
+
+.san_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_9_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san9_img{width:264px;height:320px;background:url(../img/GRILLED-FOCACCIA-GARLIC-CHICKEN_116.png) no-repeat top;transition:transform 0.5s}
+.san9_img:hover{transform:scale(1.1,1.1)}
+
+.san_10_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_10_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san10_img{width:264px;height:320px;background:url(../img/GRILLED-FOCACCIA-HAM_CHEESE_117.png) no-repeat top;transition:transform 0.5s}
+.san10_img:hover{transform:scale(1.1,1.1)}
+
+.san_11_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_11_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san11_img{width:264px;height:320px;background:url(../img/TOMATO-MOZZARELLA-WRAP_118.png) no-repeat top;transition:transform 0.5s}
+.san11_img:hover{transform:scale(1.1,1.1)}
+
+.san_12_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_12_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san12_img{width:264px;height:320px;background:url(../img/CAESAR-CHICKEN-WRAP_120.png) no-repeat top;transition:transform 0.5s}
+.san12_img:hover{transform:scale(1.1,1.1)}
+
+.san_13_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_13_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san13_img{width:264px;height:320px;background:url(../img/OLIVE-CHICKEN-PANINI_125.png) no-repeat top;transition:transform 0.5s}
+.san13_img:hover{transform:scale(1.1,1.1)}
+
+.san_14_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_14_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box;letter-spacing:-1}
+.san14_img{width:264px;height:320px;background:url(../img/CHILI-SAUSAGE-BAGUETTE-SANDWICH_126.png) no-repeat top;transition:transform 0.5s}
+.san14_img:hover{transform:scale(1.1,1.1)}
+
+.san_15_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_15_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box;letter-spacing:-1}
+.san15_img{width:264px;height:320px;background:url(../img/JALAPENO-STEAK-BAGUETTE-SANDWICH_127.png) no-repeat top;transition:transform 0.5s}
+.san15_img:hover{transform:scale(1.1,1.1)}
+
+.san_16_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_16_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san16_img{width:264px;height:320px;background:url(../img/PESTO_HAM_CHEESE_129.png) no-repeat top;transition:transform 0.5s}
+.san16_img:hover{transform:scale(1.1,1.1)}
+
+.san_17_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_17_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san17_img{width:264px;height:320px;background:url(../img/MEXICAN-PANINI_134.png) no-repeat top;transition:transform 0.5s}
+.san17_img:hover{transform:scale(1.1,1.1)}
+
+.san_18_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_18_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san18_img{width:264px;height:320px;background:url(../img/BARBECUE-CHICKEN-PANINI_135.png) no-repeat top;transition:transform 0.5s}
+.san18_img:hover{transform:scale(1.1,1.1)}
+
+.san_19_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_19_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san19_img{width:264px;height:320px;background:url(../img/SCRAMBLED-EGG-SANDWICH_136.png) no-repeat top;transition:transform 0.5s}
+.san19_img:hover{transform:scale(1.1,1.1)}
+
+.san_20_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.san_20_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san20_img{width:264px;height:320px;background:url(../img/CROQUE-MONSIEUR_137.png) no-repeat top;transition:transform 0.5s}
+.san20_img:hover{transform:scale(1.1,1.1)}
+
+.san_21_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.san_21_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san21_img{width:264px;height:320px;background:url(../img/B.E.L.T-SANDWICH_142.png) no-repeat top;transition:transform 0.5s}
+.san21_img:hover{transform:scale(1.1,1.1)}
+
+.san_22_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.san_22_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san22_img{width:264px;height:320px;background:url(../img/TOMATO-MOZZARELLA-CHEESE_143.png) no-repeat top;transition:transform 0.5s}
+.san22_img:hover{transform:scale(1.1,1.1)}
+
+.san_23_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.san_23_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.san23_img{width:264px;height:320px;background:url(../img/LEMON-CHICKEN-CLUB_144.png) no-repeat top;transition:transform 0.5s}
+.san23_img:hover{transform:scale(1.1,1.1)}
+
+/*salad*/
+.f_salad{width:1146px;overflow:hidden;margin:0 auto 66px}
+.salad_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.salad_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.sal_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_4{position:relative;width:264px;height:320px;float:left}
+.sal_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_8{position:relative;width:264px;height:320px;float:left}
+.sal_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.sal_12{position:relative;width:264px;height:320px;float:left}
+
+.sal{font-size:16px;font-weight:bold}
+.sal_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.sal_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.sal_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.sal_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.sal_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal1_img{width:264px;height:320px;background:url(../img/SOFT-BOILED-EGG_148.png) no-repeat top;transition:transform 0.5s}
+.sal1_img:hover{transform:scale(1.1,1.1)}
+.sal1_info{line-height:2;margin-bottom:50px;letter-spacing:-0.8}
+
+.sal_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal2_img{width:264px;height:320px;background:url(../img/HUMMUS_VEGGIE-STICKS_149.png) no-repeat top;transition:transform 0.5s}
+.sal2_img:hover{transform:scale(1.1,1.1)}
+
+.sal_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal3_img{width:264px;height:320px;background:url(../img/SHRIMP-GREEK-SALAD_150.png) no-repeat top;transition:transform 0.5s}
+.sal3_img:hover{transform:scale(1.1,1.1)}
+.sal3_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.8}
+
+.sal_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal4_img{width:264px;height:320px;background:url(../img/SHRIMP-COBB-SALAD_151.png) no-repeat top;transition:transform 0.5s}
+.sal4_img:hover{transform:scale(1.1,1.1)}
+.sal4_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.8}
+
+.sal_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.sal_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal5_img{width:264px;height:320px;background:url(../img/AVOCADO-COBB-SALAD_156.png) no-repeat top;transition:transform 0.5s}
+.sal5_img:hover{transform:scale(1.1,1.1)}
+.sal5_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-1}
+
+.sal_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal6_img{width:264px;height:320px;background:url(../img/CAPRESE-SALAD_157.png) no-repeat top;transition:transform 0.5s}
+.sal6_img:hover{transform:scale(1.1,1.1)}
+
+.sal_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.sal_7_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal7_img{width:264px;height:320px;background:url(../img/HERB-CHICKEN-GARDEN-SALAD_158.png) no-repeat top;transition:transform 0.5s}
+.sal7_img:hover{transform:scale(1.1,1.1)}
+
+.sal_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_8_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal8_img{width:264px;height:320px;background:url(../img/GRILLED-CHICKEN-CAESAR-SALAD_159.png) no-repeat top;transition:transform 0.5s}
+.sal8_img:hover{transform:scale(1.1,1.1)}
+.sal8_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.7}
+
+.sal_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.sal_9_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal9_img{width:264px;height:320px;background:url(../img/HEALTHY-CUP-REFRESH_164.png) no-repeat top;transition:transform 0.5s}
+.sal9_img:hover{transform:scale(1.1,1.1)}
+.sal9_info{line-height:2;margin-bottom:50px;letter-spacing:-0.7}
+
+.sal_10_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.sal_10_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal10_img{width:264px;height:320px;background:url(../img/PLAIN-GREEK-YOGURT_165.png) no-repeat top;transition:transform 0.5s}
+.sal10_img:hover{transform:scale(1.1,1.1)}
+
+.sal_11_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.sal_11_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.sal11_img{width:264px;height:320px;background:url(../img/HONEY-BANANA-GREEK-YOGURT_166.png) no-repeat top;transition:transform 0.5s}
+.sal11_img:hover{transform:scale(1.1,1.1)}
+
+/*bakery*/
+.f_bakery{width:1146px;overflow:hidden;margin:0 auto 66px}
+.bakery_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.bakery_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.ba_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_4{position:relative;width:264px;height:320px;float:left}
+.ba_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_8{position:relative;width:264px;height:320px;float:left}
+.ba_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_12{position:relative;width:264px;height:320px;float:left}
+.ba_13{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_14{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_15{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.ba_16{position:relative;width:264px;height:320px;float:left}
+
+.ba{font-size:16px;font-weight:bold}
+.ba_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.ba_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.ba_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.ba_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.ba_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.ba_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba1_img{width:264px;height:320px;background:url(../img/WALNUT-BAGEL-WITH-NUTELLA_170.png) no-repeat top;transition:transform 0.5s}
+.ba1_img:hover{transform:scale(1.1,1.1)}
+.ba1_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.7}
+
+.ba_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.ba_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba2_img{width:264px;height:320px;background:url(../img/PLAIN-BAGEL-WITH-NUTELLA_171.png) no-repeat top;transition:transform 0.5s}
+.ba2_img:hover{transform:scale(1.1,1.1)}
+.ba2_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.7}
+
+.ba_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba3_img{width:264px;height:320px;background:url(../img/RAISIN-SCONE_172.png) no-repeat top;transition:transform 0.5s}
+.ba3_img:hover{transform:scale(1.1,1.1)}
+
+.ba_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba4_img{width:264px;height:320px;background:url(../img/ORIGINAL-SCONE_173.png) no-repeat top;transition:transform 0.5s}
+.ba4_img:hover{transform:scale(1.1,1.1)}
+
+.ba_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba5_img{width:264px;height:320px;background:url(../img/ORANGE-CHOCOLAT-POUND_178.png) no-repeat top;transition:transform 0.5s}
+.ba5_img:hover{transform:scale(1.1,1.1)}
+
+.ba_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba6_img{width:264px;height:320px;background:url(../img/TWG-MILK-TEA-POUND_179.png) no-repeat top;transition:transform 0.5s}
+.ba6_img:hover{transform:scale(1.1,1.1)}
+
+.ba_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_7_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba7_img{width:264px;height:320px;background:url(../img/SWEET-BUTTER-TOAST_180.png) no-repeat top;transition:transform 0.5s}
+.ba7_img:hover{transform:scale(1.1,1.1)}
+
+.ba_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_8_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba8_img{width:264px;height:320px;background:url(../img/SWEET-BUTTER-TOAST-WITH-BERRY_181.png) no-repeat top;transition:transform 0.5s}
+.ba8_img:hover{transform:scale(1.1,1.1)}
+
+.ba_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_9_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba9_img{width:264px;height:320px;background:url(../img/Double-Chocolate-Muffin_186.png) no-repeat top;transition:transform 0.5s}
+.ba9_img:hover{transform:scale(1.1,1.1)}
+
+.ba_10_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_10_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba10_img{width:264px;height:320px;background:url(../img/Raspberry-Chocochip-Muffin_187.png) no-repeat top;transition:transform 0.5s}
+.ba10_img:hover{transform:scale(1.1,1.1)}
+
+.ba_11_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.ba_11_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba11_img{width:264px;height:320px;background:url(../img/Original-Blueberry-Muffin_188.png) no-repeat top;transition:transform 0.5s}
+.ba11_img:hover{transform:scale(1.1,1.1)}
+
+.ba_12_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_12_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba12_img{width:264px;height:320px;background:url(../img/TOMATO-BACON-BLOOMING-BREAD_189.png) no-repeat top;transition:transform 0.5s}
+.ba12_img:hover{transform:scale(1.1,1.1)}
+
+.ba_13_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.ba_13_info>h3{font-size:13px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.ba13_img{width:264px;height:320px;background:url(../img/6-CHEESE-BLOOMING-BREAD_194.png) no-repeat top;transition:transform 0.5s}
+.ba13_img:hover{transform:scale(1.1,1.1)}
+
+/*cookie*/
+.f_cookie{width:1146px;overflow:hidden;margin:0 auto 66px}
+.cookie_title{width:1146px;height:55px;margin:0 auto 35px;background:url(../img/menu_title_bar.png) no-repeat}
+.cookie_title>p{font-size:14px;color:#fff;padding:13px 0 13px 19px;box-sizing:border-box}
+
+
+.coo_1{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_2{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_3{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_4{position:relative;width:264px;height:320px;float:left}
+.coo_5{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_6{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_7{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_8{position:relative;width:264px;height:320px;float:left}
+.coo_9{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_10{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_11{position:relative;width:264px;height:320px;float:left;margin-right:30px}
+.coo_12{position:relative;width:264px;height:320px;float:left}
+
+.coo{font-size:16px;font-weight:bold}
+.coo_info{line-height:2;margin-bottom:50px;letter-spacing:-0.6}
+.coo_info5{line-height:1.5;margin-bottom:10px;letter-spacing:-0.6}
+.coo_info4{line-height:1.5;margin-bottom:30px;letter-spacing:-0.6}
+.coo_info3{line-height:1.5;margin-bottom:50px;letter-spacing:-0.6}
+
+
+
+.coo_1_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.coo_1_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo1_img{width:264px;height:320px;background:url(../img/GREEK-YOGURT-GRANOLA-BAR_196.png) no-repeat top;transition:transform 0.5s}
+.coo1_img:hover{transform:scale(1.1,1.1)}
+
+.coo_2_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.coo_2_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo2_img{width:264px;height:320px;background:url(../img/NUTS-N-FRUITS_197.png) no-repeat top;transition:transform 0.5s}
+.coo2_img:hover{transform:scale(1.1,1.1)}
+
+.coo_3_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.coo_3_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo3_img{width:264px;height:320px;background:url(../img/ALMOND-TUILE_198.png) no-repeat top;transition:transform 0.5s}
+.coo3_img:hover{transform:scale(1.1,1.1)}
+
+.coo_4_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.coo_4_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo4_img{width:264px;height:320px;background:url(../img/CHOCOLAT-COOKIE_199.png) no-repeat top;transition:transform 0.5s}
+.coo4_img:hover{transform:scale(1.1,1.1)}
+
+.coo_5_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.coo_5_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo5_img{width:264px;height:320px;background:url(../img/WHITE-BUTTER-COOKIE_204.png) no-repeat top;transition:transform 0.5s}
+.coo5_img:hover{transform:scale(1.1,1.1)}
+
+.coo_6_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-365px;display:none}
+.coo_6_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo6_img{width:264px;height:320px;background:url(../img/COOKIE-SET_205.png) no-repeat top;transition:transform 0.5s}
+.coo6_img:hover{transform:scale(1.1,1.1)}
+.coo6_info{line-height:2;margin-bottom:80px;letter-spacing:-0.6}
+
+.coo_7_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.coo_7_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo7_img{width:264px;height:320px;background:url(../img/Dark-Chocolate-Cookie_206.png) no-repeat top;transition:transform 0.5s}
+.coo7_img:hover{transform:scale(1.1,1.1)}
+.coo7_info{line-height:2;margin-bottom:30px;letter-spacing:-0.6}
+
+.coo_8_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.coo_8_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo8_img{width:264px;height:320px;background:url(../img/Peanut-Butter-Cookie_207.png) no-repeat top;transition:transform 0.5s}
+.coo8_img:hover{transform:scale(1.1,1.1)}
+.coo8_info{line-height:2;margin-bottom:30px;letter-spacing:-0.6}
+
+.coo_9_info{width:264px;height:320px;background:rgba(35,31,32,0.9);padding:20px 20px;box-sizing:border-box;color:#fff;font-weight:lighter;font-size:12px;position:relative;top:-320px;display:none}
+.coo_9_info>h3{font-size:14px;line-height:2;margin-bottom:20px;border-bottom:1px solid #fff;width:223px;padding-bottom:15px;box-sizing:border-box}
+.coo9_img{width:264px;height:320px;background:url(../img/TWOSOME-LANGUE-DE-CHAT_212.png) no-repeat top;transition:transform 0.5s}
+.coo9_img:hover{transform:scale(1.1,1.1)}
+.coo9_info{line-height:2;margin-bottom:50px;letter-spacing:-0.7}
+
+/*footer*/
+footer{height:250px;background:#231f20}
+footer h2{position:absolute;left:-9999px;top:-9999px}
+.term h3{position:absolute;left:-9999px;top:-9999px}
+.term ul{width:545px;height:58px;margin:auto;padding:23px 0;box-sizing:border-box}
+.term1{float:left;margin-right:42px}
+.term1 a{color:#fff}
+.term2{float:left;margin-right:42px}
+.term2 a{color:#fff}
+.term3{float:left;margin-right:42px}
+.term3 a{color:#c3c3c3}
+.term4{float:left;margin-right:42px}
+.term4 a{color:#fff}
+.term5{float:left}
+.term5 a{color:#fff}
+
+.term1:hover{font-weight:bold}
+.term2:hover{font-weight:bold}
+.term3:hover{font-weight:bold}
+.term4:hover{font-weight:bold}
+.term5:hover{font-weight:bold}
+        
+.footer_bottom{height:191px;border-top:1px solid #fff;box-sizing:border-box;text-align:center}
+
+.footer_bottom_wrap1{width:1104px;overflow:hidden;margin:18px auto 11px;color:#fff}
+.footer1{float:left}
+.footer1:after{content:"|";margin:14px}
+.footer2{float:left}
+.footer2:after{content:"|";margin:14px}
+.footer3{float:left}
+.footer3:after{content:"|";margin:14px}
+.footer4{float:left}
+.footer4:after{content:"|";margin:14px}
+.footer5{float:left}
+        
+.footer_bottom_wrap2{width:800px;overflow:hidden;margin:0 auto 26px;color:#fff}
+.footer6{float:left}
+.footer6:after{content:"|";margin:0 20px}
+.footer7{float:left}
+.footer7:after{content:"|";margin:0 20px}
+.footer8{float:left}
+.footer9{color:#fff;margin:auto;line-height:1}

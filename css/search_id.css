@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ul,
+li,
+dl,
+dt,
+fieldset,
+form,
+legend,
+dd {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR", "나눔 고딕", "맑은 고딕", "굴림", sans-serif,
+    serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+form {
+  width: 500px;
+  height: 300px;
+}
+fieldset {
+  border: 0;
+  box-sizing: border-box;
+}
+legend {
+  width: 500px;
+  height: 70px;
+  background: #af1f39;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+p{
+    width: 500px;
+    height: 230px;
+    margin: auto;
+    padding-top: 90px;
+    box-sizing: border-box;
+    background: #eee;
+    font-size: 18px;
+    color: #231f20;
+    text-align: center;
+}
+label{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+input{
+    width: 200px;
+    height: 28px;
+    border:0;
+    background: #fff;
+    margin-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+button{
+    width: 50px;
+    height: 30px;
+    background: #231f20;
+    color: #fff;
+    padding: 3px 0 ;
+    border: 0;
+    cursor: pointer;
+}
